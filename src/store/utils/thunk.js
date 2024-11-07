@@ -1,6 +1,8 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-const URL_SERV = "http://localhost:3001";
+ //const URL_SERV = "http://localhost:3001";
+ const URL_SERV = "https://sherylmart-products.onrender.com";
+
 
 export const fetchProducts = createAsyncThunk(
     'products/fetchProducts',
