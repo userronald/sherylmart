@@ -25,8 +25,6 @@ const Checkout=()=>{
       name: registeredName.customerName || "",
       email: "",
       address: "",
-      town: "",
-      pincode: "",
       phone: "",
     },
     validationSchema: Yup.object({
