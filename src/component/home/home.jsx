@@ -33,7 +33,7 @@ const Home = () => {
     <>
       <section
         className="sm:h-48 md:h-80 lg:h-96 bg-center bg-no-repeat bg-[length:100%_100%]"
-        style={{ backgroundImage: "url(src/assets/images/sherylmart.webp)" }}
+        style={{ backgroundImage: "url(/images/sherylmart.webp)" }}
       >
         <div className="w-full h-full grid grid-cols-2">
           <div className="flex items-center justify-center bg-white p-4 md:p-6 lg:p-8">

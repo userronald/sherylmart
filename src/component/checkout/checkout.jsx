@@ -6,7 +6,6 @@ import { sendMessage } from "../../store/utils/thunk";
 import { useNavigate } from "react-router-dom";
 import { storeOrderDetails } from "../../store/reducers/orders";
 import { clearCart } from "../../store/reducers/cartItems";
-import { useEffect } from "react";
 
 const Checkout=()=>{
     const dispatch =useDispatch();
