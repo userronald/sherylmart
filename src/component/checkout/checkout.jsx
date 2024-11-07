@@ -1,6 +1,6 @@
 import {  useFormik } from "formik";
 import { useDispatch,useSelector } from "react-redux";
-import * as Yup from "Yup";
+import * as Yup from "yup";
 import { showToast } from "../utils/tools";
 import { sendMessage } from "../../store/utils/thunk";
 import { useNavigate } from "react-router-dom";
