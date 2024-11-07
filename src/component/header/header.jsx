@@ -21,7 +21,7 @@ import { useSelector } from "react-redux";
               flex justify-center items-center relative "
               >
                 <img
-                  src="/src/assets/images/icon/carts.png"
+                  src="/images/icon/carts.png"
                   className="w-6"
                   alt="SherylMart"
                 />

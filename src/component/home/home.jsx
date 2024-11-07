@@ -54,56 +54,56 @@ const Home = () => {
         <div className="flex flex-col md:flex-row gap-4 justify-center bg-gray-500">
           <div className="flex-1">
             <img
-              src="/src/assets/images/hawaiian-shirt.png"
+              src="/images/hawaiian-shirt.png"
               alt="SherylMart"
               className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
             />
           </div>
           <div className="flex-1">
             <img
-              src="/src/assets/images/woman.png"
+              src="/images/woman.png"
               alt="SherylMart"
               className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
             />
           </div>
           <div className="flex-1">
             <img
-              src="/src/assets/images/converse.png"
+              src="/images/converse.png"
               alt="SherylMart"
               className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
             />
           </div>
           <div className="flex-1">
             <img
-              src="/src/assets/images/overall.png"
+              src="/images/overall.png"
               alt="SherylMart"
               className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
             />
           </div>
           <div className="flex-1">
             <img
-              src="/src/assets/images/pendant.png"
+              src="/images/pendant.png"
               alt="SherylMart"
               className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
             />
           </div>
           <div className="flex-1">
             <img
-              src="/src/assets/images/shopping.png"
+              src="/images/shopping.png"
               alt="SherylMart"
               className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
             />
           </div>
           <div className="flex-1">
             <img
-              src="/src/assets/images/desktop.png"
+              src="/images/desktop.png"
               alt="SherylMart"
               className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
             />
           </div>
           <div className="flex-1">
             <img
-              src="/src/assets/images/hoodie.png"
+              src="/images/hoodie.png"
               alt="SherylMart"
               className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
             />
