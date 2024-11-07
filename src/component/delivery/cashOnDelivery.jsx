@@ -43,7 +43,7 @@ const CashOnDelivery = () => {
               <p className="text-2xl font-bold text-green-600">
                 ₹{orderTotal.toFixed(2)}
               </p>
-              {/* toFixed change the number in to two decimal,for example the amount is 60  the toFixed chnag in to 60.00 */}
+              {/* toFixed change the number in to two decimal,for example the amount is 60  the toFixed change in to 60.00 */}
             </div>
           )}
 
