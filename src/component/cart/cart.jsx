@@ -1,10 +1,7 @@
 import { useEffect } from "react";
-import { CartItemsSlice } from "../../store/reducers/cartItems"
 import { useDispatch, useSelector } from "react-redux"
 import { AddToCartPage } from "../../store/utils/thunk";
 import { increaseTheQuantity,decreaseTheQuantity,removeItem } from "../../store/reducers/cartItems";
-import Checkout from "../checkout/checkout";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FaTrash } from "react-icons/fa";
 
@@ -109,7 +106,7 @@ const Cart=()=>{
             </button>
           </div>
 
-          {/* Order Summary Section */}
+       
           <div className="bg-white p-6 rounded-lg shadow-md md:w-1/3 flex flex-col justify-between h-full">
             <h2 className="text-xl font-semibold mb-4">Order Summary</h2>
             <div className="flex justify-between py-2 border-b border-gray-200">

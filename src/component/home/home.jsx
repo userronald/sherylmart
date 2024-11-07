@@ -2,28 +2,27 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts, AddToCartPage } from "../../store/utils/thunk";
 import { addToCart } from "../../store/reducers/cartItems";
-import UserRegistration from "../userRegistration/userNameRegistration";
 import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
-  const homeProducts = useSelector((state) => state.products);
-  const dispatch = useDispatch();
+    const homeProducts = useSelector((state) => state.products);
+    const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchProducts({ page: 1, order: "desc", limit: 20 }));
-  }, []);
+        useEffect(() => {
+           dispatch(fetchProducts({ page: 1, order: "desc", limit: 20 }));
+        }, []);
 
-  const navigate = useNavigate();
-  const userAccount = useSelector((state)=>state.users.customerName)
+    const navigate = useNavigate();
+    const userAccount = useSelector((state)=>state.users.customerName)
 
-  const handleAddtoCart=(item)=>{
-    if(userAccount==0){
-       navigate("/register", { replace: true });
-    }
-    else{
-      navigate("/cart", {replace:true})
-    }
+    const handleAddtoCart=(item)=>{
+       if(userAccount==0){
+         navigate("/register", { replace: true });
+       }
+       else{
+           navigate("/cart", {replace:true})
+       }
     dispatch(addToCart(item)); // used to add in the store
     dispatch(AddToCartPage(item))// used to add in th json server 
   }

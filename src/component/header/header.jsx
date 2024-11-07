@@ -18,7 +18,7 @@ import { useSelector } from "react-redux";
             <div className="flex items-center space-x-4">
               <div
                 className="w-12 h-12 bg-gray-100 rounded-full 
-              flex justify-center items-center relative "
+                   flex justify-center items-center relative "
               >
                 <img
                   src="/images/icon/carts.png"
