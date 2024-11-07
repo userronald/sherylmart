@@ -1,5 +1,5 @@
 import { useFormik } from "formik";
-import * as Yup from "Yup";
+import * as Yup from "yup";
 import { useDispatch } from "react-redux";
 import { sendMessage } from "../../store/utils/thunk";
 import { addToUser } from "../../store/reducers/users";
