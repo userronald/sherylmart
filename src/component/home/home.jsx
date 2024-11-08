@@ -25,7 +25,7 @@ const Home = () => {
          navigate("/register", { replace: true });
        }
        else{
-           navigate("/", {replace:true})
+           navigate("/cart", {replace:true})
        }
     dispatch(addToCart(item)); // used to add in the store
     dispatch(AddToCartPage(item))// used to add in th json server 

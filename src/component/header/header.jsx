@@ -18,7 +18,7 @@ import { useSelector } from "react-redux";
             <div className="flex items-center space-x-4">
               <div
                 className="w-12 h-12 bg-gray-100 rounded-full 
-                   flex justify-center items-center relative "
+               flex justify-center items-center relative"
               >
                 <img
                   src="/images/icon/carts.png"
@@ -26,20 +26,17 @@ import { useSelector } from "react-redux";
                   alt="SherylMart"
                 />
 
-                {cartDetails.cartItems && cartDetails.cartItems.length > 0
-                  ? cartDetails.cartItems.map((item) => (
-                      <Link to="./cart" className="ml-4 text-white">
-                        <span
-                          className="absolute top-1/2 right-1/4 
-                             bg-red-500 text-white text-sm w-5 h-5
-                              rounded-full flex justify-center items-center"
-                          key={item.id}
-                        >
-                          {cartDetails.cartItems.length}
-                        </span>
-                      </Link>
-                    ))
-                  : null}
+                {/* Cart item count badge */}
+                {cartDetails.cartItems && cartDetails.cartItems.length > 0 && (
+                  <Link to="./cart" className="absolute bottom-0 right-0">
+                    <span
+                      className="bg-red-500 text-white text-xs w-5 h-5
+                     rounded-full flex justify-center items-center"
+                    >
+                      {cartDetails.cartItems.length}
+                    </span>
+                  </Link>
+                )}
               </div>
 
               <div>
