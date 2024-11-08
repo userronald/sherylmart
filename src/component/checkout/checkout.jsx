@@ -117,7 +117,7 @@ const Checkout=()=>{
                 </label>{" "}
                 <br />
                 <input
-                  type="number"
+                  type="tel"
                   className="form-control bg-neutral-300 rounded border-2 border-gray-400 w-full p-2"
                   name="phone"
                   {...formik.getFieldProps("phone")}
