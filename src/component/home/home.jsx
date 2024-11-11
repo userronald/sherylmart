@@ -115,11 +115,7 @@ const Home = () => {
       </section>
 
       <div className="bg-[#C0C0C0]">
-        {loading ? (
-          <div className="flex justify-center items-center py-8">
-            <div className="loader border-t-4 border-blue-500 rounded-full w-16 h-16 animate-spin"></div>
-          </div>
-        ) : (
+        {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-8 px-4 bg-white	">
             {homeProducts.lists ? (
               homeProducts.lists.items.map((item) => (
@@ -152,7 +148,7 @@ const Home = () => {
               <p>No Products are here</p>
             )}
           </div>
-        )}
+        }
       </div>
     </>
   );
