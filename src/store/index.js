@@ -18,7 +18,7 @@ const persistConfig ={
     key:"root",
     storage,
     version:1,
-    whitelist:["products","cart","users"] // this allows only to persit the cart reducer so that the product reducer won't be persist
+    whitelist:["cart","users"] // this allows only to persit the cart reducer so that the product reducer won't be persist
 }
 
 const persistedReducer = persistReducer(persistConfig,rootReducer)
