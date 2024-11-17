@@ -29,7 +29,7 @@ createRoot(document.getElementById("root")).render(
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className="loading">Loading...</div>}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="cart" element={<Cart />} />
