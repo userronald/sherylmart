@@ -11,8 +11,6 @@ import { PersistGate } from "redux-persist/integration/react";
 import CashOnDelivery from "./component/delivery/cashOnDelivery";
 import UserRegistration from "./component/userRegistration/userNameRegistration";
 import Footer from "./component/footer/footer";
-import products from "./component/products/products";
-
 import { lazy,Suspense } from "react";
 import Products from "./component/products/products";
 

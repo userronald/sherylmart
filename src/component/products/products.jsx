@@ -5,7 +5,7 @@ import { addToCart } from "../../store/reducers/cartItems";
 import { useNavigate } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 
-export default Products = () => {
+export const Products = () => {
   const [loading, setLoading] = useState(true);
   const [addedToCart, setAddedToCart] = useState([]);
   const homeProducts = useSelector((state) => state.products);
@@ -164,3 +164,5 @@ export default Products = () => {
     </>
   );
 };
+
+export default Products;
