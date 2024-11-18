@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts, AddToCartPage } from "../../store/utils/thunk";
 import { addToCart } from "../../store/reducers/cartItems";
 import { useNavigate } from "react-router-dom";
+import { FiShoppingCart } from "react-icons/fi"; 
+
 
 
 const Home = () => {
@@ -149,6 +151,13 @@ const Home = () => {
                   >
                     Add to Cart
                   </button>
+                  {addedToCart.includes(item.id) && (
+                    <FiShoppingCart
+                      className="text-2xl text-blue-600 cursor-pointer hover:text-blue-800"
+                      onClick={handleViewCart}
+                      title="View Cart"
+                    />
+                  )}
                 </div>
               ))
             ) : (
