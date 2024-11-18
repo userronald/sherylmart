@@ -3,42 +3,37 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts, AddToCartPage } from "../../store/utils/thunk";
 import { addToCart } from "../../store/reducers/cartItems";
 import { useNavigate } from "react-router-dom";
-
+import { FiShoppingCart } from "react-icons/fi"; // Importing the cart icon
 
 const Home = () => {
-    const [loading,setLoading]= useState(true);
-    const [addedToCart, setAddedToCart] = useState([]);
-    const homeProducts = useSelector((state) => state.products);
-    const dispatch = useDispatch();
+  const [loading, setLoading] = useState(true);
+  const [clickedItems, setClickedItems] = useState([]); // Track clicked items
+  const homeProducts = useSelector((state) => state.products);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const userAccount = useSelector((state) => state.users.customerName);
 
-        useEffect(() => {
-          setLoading(true);
-           dispatch(fetchProducts({ page: 1, order: "desc", limit: 20 }))
-           .then(()=>setLoading(false)) //stop loading when fetch completes
-           .catch(()=>setLoading(false));
-        }, []);
+  useEffect(() => {
+    setLoading(true);
+    dispatch(fetchProducts({ page: 1, order: "desc", limit: 20 }))
+      .then(() => setLoading(false))
+      .catch(() => setLoading(false));
+  }, [dispatch]);
 
-    const navigate = useNavigate();
-    const userAccount = useSelector((state)=>state.users.customerName)
+  const handleAddtoCart = (item) => {
+    if (userAccount === 0) {
+      navigate("/register", { replace: true });
+    } else {
+      setClickedItems((prev) => [...prev, item.id]); // Add item to clicked list
+      dispatch(addToCart(item)); // Add to Redux store
+      dispatch(AddToCartPage(item)); // Add to JSON server
+    }
+  };
 
-    const handleAddtoCart=(item)=>{
-       if(userAccount==0){
-         navigate("/register", { replace: true });
-       }
-       else{
-           navigate("/", {replace:true})
-       }
-    dispatch(addToCart(item)); // used to add in the store
-    dispatch(AddToCartPage(item))// used to add in th json server 
-    setAddedToCart((prev)=>[...prev,item.id]) // used to track the added product in cart
-  }
+  const handleViewCart = () => {
+    navigate("/cart");
+  };
 
-
-  const handleViewCart=()=>{
-    navigate("/cart")
-  }
-
-  
   return (
     <>
       <section
