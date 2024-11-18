@@ -12,7 +12,6 @@ import CashOnDelivery from "./component/delivery/cashOnDelivery";
 import UserRegistration from "./component/userRegistration/userNameRegistration";
 import Footer from "./component/footer/footer";
 import { lazy,Suspense } from "react";
-import Products from "./component/products/products";
 
 
 const Home = lazy(()=>import('./component/home/home'));
@@ -36,7 +35,6 @@ createRoot(document.getElementById("root")).render(
                 <Route path="checkout" element={<Checkout />} />
                 <Route path="order" element={<CashOnDelivery />} />
                 <Route path="register" element={<UserRegistration />} />
-                <Route path ="products" element={<Products />} />
               </Routes>
             </Suspense>
           </main>
