@@ -3,44 +3,39 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts, AddToCartPage } from "../../store/utils/thunk";
 import { addToCart } from "../../store/reducers/cartItems";
 import { useNavigate } from "react-router-dom";
-import { FiShoppingCart } from "react-icons/fi"; 
+import { FiShoppingCart } from "react-icons/fi";
 
+export default Products = () => {
+  const [loading, setLoading] = useState(true);
+  const [addedToCart, setAddedToCart] = useState([]);
+  const homeProducts = useSelector((state) => state.products);
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    setLoading(true);
+    dispatch(fetchProducts({ page: 1, order: "desc", limit: 20 }))
+      .then(() => setLoading(false)) //stop loading when fetch completes
+      .catch(() => setLoading(false));
+  }, []);
 
-const Home = () => {
-    const [loading,setLoading]= useState(true);
-    const [addedToCart, setAddedToCart] = useState([]);
-    const homeProducts = useSelector((state) => state.products);
-    const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const userAccount = useSelector((state) => state.users.customerName);
 
-        useEffect(() => {
-          setLoading(true);
-           dispatch(fetchProducts({ page: 1, order: "desc", limit: 4 }))
-           .then(()=>setLoading(false)) //stop loading when fetch completes
-           .catch(()=>setLoading(false));
-        }, []);
-
-    const navigate = useNavigate();
-    const userAccount = useSelector((state)=>state.users.customerName)
-
-    const handleAddtoCart=(item)=>{
-       if(userAccount==0){
-         navigate("/register", { replace: true });
-       }
-       else{
-           navigate("/", {replace:true})
-       }
+  const handleAddtoCart = (item) => {
+    if (userAccount == 0) {
+      navigate("/register", { replace: true });
+    } else {
+      navigate("/", { replace: true });
+    }
     dispatch(addToCart(item)); // used to add in the store
-    dispatch(AddToCartPage(item))// used to add in th json server 
-    setAddedToCart((prev)=>[...prev,item.id]) // used to track the added product in cart
-  }
+    dispatch(AddToCartPage(item)); // used to add in th json server
+    setAddedToCart((prev) => [...prev, item.id]); // used to track the added product in cart
+  };
 
+  const handleViewCart = () => {
+    navigate("/cart");
+  };
 
-  const handleViewCart=()=>{
-    navigate("/cart")
-  }
-
-  
   return (
     <>
       <section
@@ -169,5 +164,3 @@ const Home = () => {
     </>
   );
 };
-
-export default Home;
