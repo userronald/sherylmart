@@ -170,7 +170,7 @@ const Home = () => {
           )}
         </div>
         {homeProducts.lists &&
-          homeProducts.lists.items.length < 20 && ( // Highlight: Button will render only if less than 20 products are loaded
+          homeProducts.lists.items.length == 20 && ( // Highlight: Button will render only if less than 20 products are loaded
             <div className="flex justify-center mt-6">
               <button
                 type="button"
