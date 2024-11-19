@@ -15,7 +15,7 @@ const Home = () => {
 
         useEffect(() => {
           setLoading(true);
-           dispatch(fetchProducts({ page: 1, order: "desc", limit: 20 }))
+           dispatch(fetchProducts({ page: 1, order: "desc", limit: 4 }))
            .then(()=>setLoading(false)) //stop loading when fetch completes
            .catch(()=>setLoading(false));
         }, []);
@@ -39,6 +39,12 @@ const Home = () => {
   const handleViewCart=()=>{
     navigate("/cart")
   }
+
+  const loadMoreProducts = () => {
+  const nextPage = homeProducts.lists.page + 1;
+  dispatch(fetchProducts({ page: nextPage, limit: 16 })); // Adjust the limit as needed
+};
+
 
   
   return (
@@ -123,49 +129,58 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="bg-[#C0C0C0]">
-        {
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-8 px-4 bg-white	">
+     <div className="bg-[#C0C0C0]">
+       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-8 px-4 bg-white">
             {homeProducts.lists ? (
-              homeProducts.lists.items.map((item) => (
-                <div
-                  className="flex flex-col items-center justify-between h-full p-4 border border-gray-200 rounded-lg shadow-sm bg-white"
-                  key={item.id}
-                >
-                  <img
-                    className="w-3/4 h-48 object-contain mb-4"
-                    src={`${item.image}?${item.id}`}
-                    alt="SherylMart"
-                  />
-                  <div className="text-center font-medium text-gray-700 mb-2 h-12 overflow-hidden text-ellipsis line-clamp-2">
-                    {item.title}
-                  </div>
-
-                  <div className="text-gray-800 font-semibold mb-4">
-                    Price:{item.price}
-                  </div>
-                  <button
-                    type="button"
-                    className="py-2 px-4 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700"
-                    onClick={() => handleAddtoCart(item)}
-                  >
-                    Add to Cart
-                  </button>
-                  {addedToCart.includes(item.id) && (
-                    <FiShoppingCart
-                      className="text-2xl text-blue-600 cursor-pointer hover:text-blue-800"
-                      onClick={handleViewCart}
-                      title="View Cart"
-                    />
-                  )}
-                </div>
-              ))
-            ) : (
-              <p>No Products are here</p>
-            )}
+               homeProducts.lists.items.map((item) => (
+        <div
+          className="flex flex-col items-center justify-between h-full p-4 border border-gray-200 rounded-lg shadow-sm bg-white"
+          key={item.id}
+        >
+          <img
+            className="w-3/4 h-48 object-contain mb-4"
+            src={`${item.image}?${item.id}`}
+            alt="SherylMart"
+          />
+          <div className="text-center font-medium text-gray-700 mb-2 h-12 overflow-hidden text-ellipsis line-clamp-2">
+            {item.title}
           </div>
-        }
-      </div>
+
+          <div className="text-gray-800 font-semibold mb-4">
+            Price: {item.price}
+          </div>
+          <button
+            type="button"
+            className="py-2 px-4 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700"
+            onClick={() => handleAddtoCart(item)}
+          >
+            Add to Cart
+          </button>
+          {addedToCart.includes(item.id) && (
+            <FiShoppingCart
+              className="text-2xl text-blue-600 cursor-pointer hover:text-blue-800"
+              onClick={handleViewCart}
+              title="View Cart"
+            />
+          )}
+        </div>
+      ))
+    ) : (
+      <p>No Products are here</p>
+    )}
+  </div>
+  {!homeProducts.lists?.end && (
+    <div className="flex justify-center mt-6">
+      <button
+        type="button"
+        className="px-6 py-2 text-sm font-medium text-white bg-black rounded-lg hover:bg-gray-800"
+        onClick={loadMoreProducts}
+      >
+        Load More Products
+      </button>
+    </div>
+  )}
+</div>
     </>
   );
 };
