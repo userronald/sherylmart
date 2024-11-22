@@ -15,7 +15,7 @@ const Home = () => {
 
         useEffect(() => {
           setLoading(true);
-           dispatch(fetchProducts({ page: 1, order: "desc", limit: 4 }))
+           dispatch(fetchProducts({ page: 1, order: "desc", limit: 20 }))
            .then(()=>setLoading(false)) //stop loading when fetch completes
            .catch(()=>setLoading(false));
         }, []);
@@ -40,10 +40,10 @@ const Home = () => {
     navigate("/cart")
   }
 
-  const loadMoreProducts = () => {
-  const nextPage = homeProducts.lists.page + 1;
-  dispatch(fetchProducts({ page: nextPage, limit: 16 })); // Adjust the limit as needed
-};
+//   const loadMoreProducts = () => {
+//   const nextPage = homeProducts.lists.page + 1;
+//   dispatch(fetchProducts({ page: nextPage, limit: 16 })); // Adjust the limit as needed
+// };
 
 
   
@@ -169,18 +169,7 @@ const Home = () => {
             <p>No Products are here</p>
           )}
         </div>
-        {homeProducts.lists &&
-          homeProducts.lists.items.length == 20 && ( // Highlight: Button will render only if less than 20 products are loaded
-            <div className="flex justify-center mt-6">
-              <button
-                type="button"
-                className="px-6 py-2 text-sm font-medium text-white bg-black rounded-lg hover:bg-gray-800"
-                onClick={loadMoreProducts}
-              >
-                Load More Products
-              </button>
-            </div>
-          )}
+    
       </div>
     </>
   );
