@@ -3,7 +3,10 @@ import axios from "axios";
 
 
 
- const URL_SERV = "https://sherylmart-products.onrender.com";
+//  const URL_SERV = "https://sherylmart-products.onrender.com";
+
+const URL_SERV =
+  "https://raw.githubusercontent.com/userronald/sherylmart-project-data/main/db.json";
 
 
 export const fetchProducts = createAsyncThunk(
