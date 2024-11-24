@@ -7,6 +7,7 @@ import db from "./firebase"; // Ensure you have Firebase initialized in a separa
 
 
 
+
 //  const URL_SERV = "https://sherylmart-products.onrender.com";
 
 
@@ -27,6 +28,8 @@ import db from "./firebase"; // Ensure you have Firebase initialized in a separa
 
 
 const productsCollectionRef = collection(db, "products");
+const cartCollectionRef = collection(db, "cart");
+const orderCollectionRef = collection(db, "order");
 
 // Thunk to Fetch Products
 export const fetchProducts = createAsyncThunk(
@@ -48,37 +51,35 @@ export const fetchProducts = createAsyncThunk(
 );
 
 
- export const AddToCartPage=createAsyncThunk(
-  // slicename/action name
-    'cart/AddToCartPage',
-   async(item)=>{
-       try{
-        await axios({
-          method:'POST',
-          url:`${URL_SERV}/cart`,
-          item
-        });
-        return true;
-      
-       }catch (error){
-           console.log('Error: ',error)
-       }
-   }
- )
 
- export const sendMessage = createAsyncThunk(
-  "checkout/sendMessage",
-  async(data)=>{
-    try{
-      await axios({
-        method:'POST',
-        url:`${URL_SERV}/order`,
-        data
-      });
-      return true;
-    }
-    catch(error){
-      console.log("Error", error);
+// Thunk to Add an Item to the Cart
+export const AddToCartPage = createAsyncThunk(
+  "cart/AddToCartPage",
+  async (item, { rejectWithValue }) => {
+    try {
+      const docRef = await addDoc(cartCollectionRef, item); // Adds a new cart document
+      console.log("Cart item added with ID:", docRef.id);
+      return { id: docRef.id, ...item }; // Return the newly added cart item
+    } catch (error) {
+      console.error("Error adding to cart:", error);
+      return rejectWithValue(error.message);
     }
   }
- );
+);
+
+
+
+// Thunk to Place an Order
+export const sendMessage = createAsyncThunk(
+  "checkout/sendMessage",
+  async (orderDetails, { rejectWithValue }) => {
+    try {
+      const docRef = await addDoc(orderCollectionRef, orderDetails); // Adds a new order document
+      console.log("Order placed with ID:", docRef.id);
+      return { id: docRef.id, ...orderDetails }; // Return the newly added order details
+    } catch (error) {
+      console.error("Error placing order:", error);
+      return rejectWithValue(error.message);
+    }
+  }
+);
