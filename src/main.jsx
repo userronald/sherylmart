@@ -2,9 +2,9 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { Provider } from "react-redux";
 import Header from "./component/header/header";
-// import Checkout from "./component/checkout/checkout";
-// import Home from "./component/home/home";
-// import Cart from "./component/cart/cart";
+ import Checkout from "./component/checkout/checkout";
+import Home from "./component/home/home";
+import Cart from "./component/cart/cart";
 import {store,persistor} from "./store";
 import { BrowserRouter, Routes,Route } from "react-router-dom";
 import { PersistGate } from "redux-persist/integration/react";
@@ -14,21 +14,21 @@ import Footer from "./component/footer/footer";
 import { lazy,Suspense } from "react";
 
 
-const Home = lazy(()=>import('./component/home/home'));
-const Cart = lazy(()=>import('./component/cart/cart'));
-const Checkout = lazy(()=>import('./component/checkout/checkout'));
+// const Home = lazy(()=>import('./component/home/home'));
+// const Cart = lazy(()=>import('./component/cart/cart'));
+// const Checkout = lazy(()=>import('./component/checkout/checkout'));
 
 
 
 
 createRoot(document.getElementById("root")).render(
-  <PersistGate persistor={persistor}>
-    <Provider store={store}>
+  <Provider store={store}>
+    <PersistGate persistor={persistor}>
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">
-            <Suspense fallback={<div className="loader">Loading...</div>}>
+            <Suspense >
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="cart" element={<Cart />} />
@@ -41,6 +41,6 @@ createRoot(document.getElementById("root")).render(
           <Footer />
         </div>
       </BrowserRouter>
-    </Provider>
-  </PersistGate>
+    </PersistGate>
+  </Provider>
 );

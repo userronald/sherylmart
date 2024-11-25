@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-import { collection, doc, getDocs, addDoc, setDoc } from "firebase/firestore";
+import { collection, getDocs, addDoc } from "firebase/firestore";
 import db from "./firebase"; // Ensure you have Firebase initialized in a separate `firebase.js` file
 
 
