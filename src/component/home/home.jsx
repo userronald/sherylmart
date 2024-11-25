@@ -146,27 +146,29 @@ const Home = () => {
                 <div className="text-gray-800 font-semibold mb-4">
                   Price: {item.price}
                 </div>
-                <button
-                  type="button"
-                  className="py-2 px-4 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700"
-                  onClick={() => handleAddtoCart(item)}
-                >
-                  Add to Cart
-                </button>
-                {addedToCart.includes(item.id) && (
-                  <FiShoppingCart
-                    className="text-2xl text-blue-600 cursor-pointer hover:text-blue-800"
-                    onClick={handleViewCart}
-                    title="View Cart"
-                  />
-                )}
+
+                <div className="flex items-center space-x-2">
+                  <button
+                    type="button"
+                    className="py-2 px-4 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700"
+                    onClick={() => handleAddtoCart(item)}
+                  >
+                    Add to Cart
+                  </button>
+                  {addedToCart.includes(item.id) && (
+                    <FiShoppingCart
+                      className="text-2xl text-red-600 cursor-pointer hover:text-red-700"
+                      onClick={handleViewCart}
+                      title="View Cart"
+                    />
+                  )}
+                </div>
               </div>
             ))
           ) : (
             <p>No Products are here</p>
           )}
         </div>
-    
       </div>
     </>
   );
