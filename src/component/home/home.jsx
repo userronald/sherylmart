@@ -40,10 +40,7 @@ const Home = () => {
     navigate("/cart")
   }
 
-//   const loadMoreProducts = () => {
-//   const nextPage = homeProducts.lists.page + 1;
-//   dispatch(fetchProducts({ page: nextPage, limit: 16 })); // Adjust the limit as needed
-// };
+
 
 
   

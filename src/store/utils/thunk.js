@@ -6,27 +6,6 @@ import db from "./firebase"; // Ensure you have Firebase initialized in a separa
 
 
 
-
-
-//  const URL_SERV = "https://sherylmart-products.onrender.com";
-
-
-// export const fetchProducts = createAsyncThunk(
-//     'products/fetchProducts',
-//     async({page=1,order='asc',limit=20})=>{
-//         try {
-//           const response = await axios.get(`${URL_SERV}/products?_page=${page}&_order=${order}&_limit=${limit}`);
-//           console.log(response.data)
-//           return response.data;
-//         } catch (error) {   
-//           console.log('Error : ',error);
-//           throw error
-//         }
-//     }
- 
-// )
-
-
 const productsCollectionRef = collection(db, "products");
 const cartCollectionRef = collection(db, "cart");
 const orderCollectionRef = collection(db, "order");
