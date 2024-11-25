@@ -23,7 +23,7 @@ export const fetchProducts = createAsyncThunk(
       console.log("Products fetched:", products);
       return products; // Return an array of product objects
     } catch (error) {
-      console.error("Error fetching products:", error);
+      console.error("Error fetching products:", error.message);
       return rejectWithValue(error.message);
     }
   }
