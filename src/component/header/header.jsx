@@ -14,7 +14,7 @@ import { useDispatch } from "react-redux";
       const dispatch = useDispatch();
 
       const logOutFunction=()=>{
-         dispatch(logOutUser);
+         dispatch(logOutUser());
       }
 
         return (
@@ -36,7 +36,7 @@ import { useDispatch } from "react-redux";
 
                 {/* Cart item count badge */}
                 {cartDetails.cartItems && cartDetails.cartItems.length > 0 && (
-                  <Link to="./cart" className="absolute bottom-0 right-0">
+                  <Link to="/cart" className="absolute bottom-0 right-0">
                     <span
                       className="bg-red-500 text-white text-xs w-5 h-5
                      rounded-full flex justify-center items-center"
@@ -62,7 +62,7 @@ import { useDispatch } from "react-redux";
               </div>
 
               <button
-              onClick={logOutFunction()}>
+              onClick={logOutFunction}>
                 logout
               </button>
             </div>
