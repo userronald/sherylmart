@@ -126,6 +126,45 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="bg-gray-100 py-12">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">
+            Featuring Products
+          </h2>
+          <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="/images/hoodies.webp"
+              alt="SherylMart"
+              className="w-full h-48 object-cover rounded-md"
+            />
+          </div>
+
+          <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="/images/shirts.webp"
+              alt="SherylMart"
+              className="w-full h-48 object-cover rounded-md"
+            />
+          </div>
+
+          <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="/images/jeans.webp"
+              alt="SherylMart"
+              className="w-full h-48 object-cover rounded-md"
+            />
+          </div>
+
+          <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md">
+            <img
+              src="/images/jacket.webp"
+              alt="SherylMart"
+              className="w-full h-48 object-cover rounded-md"
+            />
+          </div>
+        </div>
+      </section>
+
       <div className="bg-[#C0C0C0]">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-8 px-4 bg-white">
           {homeProducts.lists ? (
