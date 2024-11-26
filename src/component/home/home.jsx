@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts, AddToCartPage } from "../../store/utils/thunk";
 import { addToCart } from "../../store/reducers/cartItems";
 import { useNavigate } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi"; 
 import { FaTruck, FaLaptop, FaCartPlus, FaUserAlt } from "react-icons/fa";
+
 
 
 
@@ -66,66 +67,68 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section>
-        <div className="flex flex-col md:flex-row gap-4 justify-center bg-gray-500">
-          <div className="flex-1">
-            <img
-              src="/images/hawaiian-shirt.png"
-              alt="SherylMart"
-              className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
-            />
-          </div>
-          <div className="flex-1">
-            <img
-              src="/images/woman.png"
-              alt="SherylMart"
-              className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
-            />
-          </div>
-          <div className="flex-1">
-            <img
-              src="/images/converse.png"
-              alt="SherylMart"
-              className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
-            />
-          </div>
-          <div className="flex-1">
-            <img
-              src="/images/overall.png"
-              alt="SherylMart"
-              className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
-            />
-          </div>
-          <div className="flex-1">
-            <img
-              src="/images/pendant.png"
-              alt="SherylMart"
-              className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
-            />
-          </div>
-          <div className="flex-1">
-            <img
-              src="/images/shopping.png"
-              alt="SherylMart"
-              className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
-            />
-          </div>
-          <div className="flex-1">
-            <img
-              src="/images/desktop.png"
-              alt="SherylMart"
-              className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
-            />
-          </div>
-          <div className="flex-1">
-            <img
-              src="/images/hoodie.png"
-              alt="SherylMart"
-              className="w-full h-48 md:h-56 object-contain rounded-md p-4 md:p-6"
-            />
+      <section>
+        <div className="overflow-x-auto scrollbar-none">
+          <div className="flex gap-4 justify-start bg-gray-500 py-6">
+            <div className="flex-none w-48">
+              <img
+                src="/images/hawaiian-shirt.png"
+                alt="SherylMart"
+                className="w-full h-48 object-contain rounded-md p-4"
+              />
+            </div>
+            <div className="flex-none w-48">
+              <img
+                src="/images/woman.png"
+                alt="SherylMart"
+                className="w-full h-48 object-contain rounded-md p-4"
+              />
+            </div>
+            <div className="flex-none w-48">
+              <img
+                src="/images/converse.png"
+                alt="SherylMart"
+                className="w-full h-48 object-contain rounded-md p-4"
+              />
+            </div>
+            <div className="flex-none w-48">
+              <img
+                src="/images/overall.png"
+                alt="SherylMart"
+                className="w-full h-48 object-contain rounded-md p-4"
+              />
+            </div>
+            <div className="flex-none w-48">
+              <img
+                src="/images/pendant.png"
+                alt="SherylMart"
+                className="w-full h-48 object-contain rounded-md p-4"
+              />
+            </div>
+            <div className="flex-none w-48">
+              <img
+                src="/images/shopping.png"
+                alt="SherylMart"
+                className="w-full h-48 object-contain rounded-md p-4"
+              />
+            </div>
+            <div className="flex-none w-48">
+              <img
+                src="/images/desktop.png"
+                alt="SherylMart"
+                className="w-full h-48 object-contain rounded-md p-4"
+              />
+            </div>
+            <div className="flex-none w-48">
+              <img
+                src="/images/hoodie.png"
+                alt="SherylMart"
+                className="w-full h-48 object-contain rounded-md p-4"
+              />
+            </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <section className="bg-gray-100 py-12">
         <div className="max-w-6xl mx-auto px-4">
