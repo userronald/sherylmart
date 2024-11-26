@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
       const nameDetails = useSelector((state)=>state.users);
 
         return (
-          <header className="bg-red-500 p-4 flex justify-between items-center mb-1">
+          <header className="bg-gray-500 p-4 flex justify-between items-center mb-1">
             <Link to="/" className="text-white text-3xl font-bold">
               SherylMart
             </Link>
