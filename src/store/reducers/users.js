@@ -16,13 +16,9 @@ export  const UsersSlice = createSlice({
                                     .join("")
                                     .toUpperCase();
        },
-
-         logOutUser(state){
-        state.customerName=null;
-    }
     }
   
 })
 
-export const {addToUser,logOutUser} = UsersSlice.actions;
+export const {addToUser} = UsersSlice.actions;
 export default UsersSlice.reducer;
