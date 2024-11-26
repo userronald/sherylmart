@@ -15,7 +15,7 @@ const Home = () => {
 
         useEffect(() => {
           setLoading(true);
-           dispatch(fetchProducts({ page: 1, order: "desc", limit: 20 }))
+           dispatch(fetchProducts({ page: 1, order: "desc", limit: 4 }))
            .then(()=>setLoading(false)) //stop loading when fetch completes
            .catch(()=>setLoading(false));
         }, []);
