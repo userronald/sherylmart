@@ -4,6 +4,7 @@ import { fetchProducts, AddToCartPage } from "../../store/utils/thunk";
 import { addToCart } from "../../store/reducers/cartItems";
 import { useNavigate } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi"; 
+import { FaTruck, FaLaptop, FaCartPlus, FaUserAlt } from "react-icons/fa";
 
 
 
@@ -127,17 +128,78 @@ const Home = () => {
       </section>
 
       <section className="bg-gray-100 py-12">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+            Why Choose Us
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+              <div className="text-4xl text-red-500 mb-4">
+                <FaTruck />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Cash on Delivery
+              </h3>
+              <p className="text-gray-600">
+                Experience seamless shopping with our Cash on Delivery option,
+                ensuring convenience and trust in every purchase.
+              </p>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+              <div className="text-4xl text-red-500 mb-4">
+                <FaLaptop />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                User-Friendly Interface
+              </h3>
+              <p className="text-gray-600">
+                Navigate with ease! Our intuitive design makes finding and
+                purchasing your favorite products a breeze.
+              </p>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+              <div className="text-4xl text-red-500 mb-4">
+                <FaCartPlus />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Dynamic Cart System
+              </h3>
+              <p className="text-gray-600">
+                Enjoy real-time updates on your cart, with the ability to adjust
+                quantities and see prices change instantly.
+              </p>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+              <div className="text-4xl text-red-500 mb-4">
+                <FaUserAlt />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Personalized Experience
+              </h3>
+              <p className="text-gray-600">
+                Your initials greet you near the shopping cart, adding a
+                personal touch to your SherylMart journey.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-12">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
-            Featuring Products
+            Find Your Perfect Fit
           </h2>
 
           <div className="flex flex-wrap justify-between items-center gap-6">
-            <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
+            <div className="border border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/hoodies.webp"
                 alt="Hoodies"
-                className="w-full h-60 object-cover rounded-md"
+                className="w-full h-64 sm:h-72 lg:h-80 object-contain rounded-md"
               />
               <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Hoodies
@@ -147,11 +209,11 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
+            <div className="border border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/shirts.webp"
                 alt="Shirts"
-                className="w-full h-60 object-cover rounded-md"
+                className="w-full h-64 sm:h-72 lg:h-80 object-contain rounded-md"
               />
               <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Shirts
@@ -161,11 +223,11 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
+            <div className="border border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/jeans.webp"
                 alt="Jeans"
-                className="w-full h-60 object-cover rounded-md"
+                className="w-full h-64 sm:h-72 lg:h-80 object-contain rounded-md"
               />
               <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Jeans
@@ -175,11 +237,11 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
+            <div className="border border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/jacket.webp"
                 alt="Jackets"
-                className="w-full h-60 object-cover rounded-md"
+                className="w-full h-64 sm:h-72 lg:h-80 object-contain rounded-md"
               />
               <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Jackets
@@ -193,7 +255,7 @@ const Home = () => {
       </section>
 
       <div className="bg-[#C0C0C0]">
-        <div className="text-center py-6 px-4 mb-6 bg-white">
+        <div className="text-center py-6 px-4 bg-white">
           <h2 className="text-3xl md:text-4xl font-extrabold text-red-600 mb-2 animate-pulse">
             Limited Stock Alert - Only 20 Units Left!
           </h2>
