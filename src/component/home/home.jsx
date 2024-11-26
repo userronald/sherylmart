@@ -130,12 +130,12 @@ const Home = () => {
         </div>
       </section> */}
 
-      <section className="bg-gray-100 py-12">
+      <section className="bg-gray-200 py-12">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card 1 */}
             <div className="bg-white text-black rounded-lg p-6 shadow-md">
-              <div className="text-6xl mb-4">
+              <div className="text-white text-6xl mb-4">
                 <FaTruck />
               </div>
               <h3 className="text-lg font-semibold mb-2">Cash on Delivery</h3>
@@ -144,11 +144,10 @@ const Home = () => {
                 ensuring convenience and trust in every purchase.
               </p>
             </div>
-            <hr className="border-t border-gray-300 my-6" />
 
             {/* Card 2 */}
             <div className="bg-white text-black rounded-lg p-6 shadow-md">
-              <div className="text-6xl mb-4">
+              <div className="text-white text-6xl mb-4">
                 <FaLaptop />
               </div>
               <h3 className="text-lg font-semibold mb-2">
@@ -159,11 +158,10 @@ const Home = () => {
                 purchasing your favorite products a breeze.
               </p>
             </div>
-            <hr className="border-t border-gray-300 my-6" />
 
             {/* Card 3 */}
             <div className="bg-white text-black rounded-lg p-6 shadow-md">
-              <div className="text-6xl mb-4">
+              <div className="text-white text-6xl mb-4">
                 <FaCartPlus />
               </div>
               <h3 className="text-lg font-semibold mb-2">
@@ -174,11 +172,10 @@ const Home = () => {
                 quantities and see prices change instantly.
               </p>
             </div>
-            <hr className="border-t border-gray-300 my-6" />
 
             {/* Card 4 */}
             <div className="bg-white text-black rounded-lg p-6 shadow-md">
-              <div className="text-6xl mb-4">
+              <div className="text-white text-6xl mb-4">
                 <FaUserAlt />
               </div>
               <h3 className="text-lg font-semibold mb-2">
