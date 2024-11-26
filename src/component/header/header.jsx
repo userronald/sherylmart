@@ -12,12 +12,10 @@ import { useSelector } from "react-redux";
   
 
         return (
-          <header className="bg-gray-500 p-4 flex justify-between items-center mb-1">
+          <header className="sticky top-0 bg-gray-500 p-4 flex justify-between items-center mb-1">
             <Link to="/" className="text-white text-3xl font-bold">
               SherylMart
             </Link>
-
-           
 
             <div className="flex items-center space-x-4">
               <div
