@@ -128,14 +128,11 @@ const Home = () => {
 
       <section className="bg-gray-100 py-12">
         <div className="max-w-6xl mx-auto px-4">
-          {/* Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
             Featuring Products
           </h2>
 
-          {/* Horizontal Layout */}
           <div className="flex flex-wrap justify-between items-center gap-6">
-            {/* Column 1 */}
             <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/hoodies.webp"
@@ -150,7 +147,6 @@ const Home = () => {
               </p>
             </div>
 
-            {/* Column 2 */}
             <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/shirts.webp"
@@ -165,7 +161,6 @@ const Home = () => {
               </p>
             </div>
 
-            {/* Column 3 */}
             <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/jeans.webp"
@@ -180,7 +175,6 @@ const Home = () => {
               </p>
             </div>
 
-            {/* Column 4 */}
             <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/jacket.webp"
@@ -199,6 +193,17 @@ const Home = () => {
       </section>
 
       <div className="bg-[#C0C0C0]">
+        <div className="text-center py-6 px-4 mb-6 bg-gradient-to-r from-yellow-300 via-red-200 to-yellow-300 rounded-lg shadow-lg">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-red-600 mb-2 animate-pulse">
+            Limited Stock Alert - Only 20 Units Left!
+          </h2>
+          <p className="text-lg md:text-xl text-gray-800">
+            Secure your order today before items sell out.
+          </p>
+          <p className="text-base text-gray-600 mt-2">
+            Act fast—once these products are gone, they're gone for good!
+          </p>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-8 px-4 bg-white">
           {homeProducts.lists ? (
             homeProducts.lists.items.map((item) => (
