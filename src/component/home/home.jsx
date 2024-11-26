@@ -193,7 +193,7 @@ const Home = () => {
       </section>
 
       <div className="bg-[#C0C0C0]">
-        <div className="text-center py-6 px-4 mb-6 bg-gradient-to-r from-yellow-300 via-red-200 to-yellow-300 rounded-lg shadow-lg">
+        <div className="text-center py-6 px-4 mb-6 bg-gradient-to-r from-gray-400 via-red-500 to-gray-400 rounded-lg shadow-lg">
           <h2 className="text-3xl md:text-4xl font-extrabold text-red-600 mb-2 animate-pulse">
             Limited Stock Alert - Only 20 Units Left!
           </h2>
