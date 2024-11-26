@@ -149,7 +149,7 @@ const Home = () => {
             <div className="lg:hidden w-full h-px bg-gray-400"></div>
 
             {/* Point 2 */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 px-4">
               <FaLaptop className="text-white text-4xl bg-gray-800 rounded-full p-2" />
               <div>
                 <h3 className="text-lg font-semibold">
@@ -166,7 +166,7 @@ const Home = () => {
             <div className="lg:hidden w-full h-px bg-gray-400"></div>
 
             {/* Point 3 */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 px-4">
               <FaCartPlus className="text-white text-4xl bg-gray-800 rounded-full p-2" />
               <div>
                 <h3 className="text-lg font-semibold">Dynamic Cart System</h3>
@@ -181,7 +181,7 @@ const Home = () => {
             <div className="lg:hidden w-full h-px bg-gray-400"></div>
 
             {/* Point 4 */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 px-4">
               <FaUserAlt className="text-white text-4xl bg-gray-800 rounded-full p-2" />
               <div>
                 <h3 className="text-lg font-semibold">
