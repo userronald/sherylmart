@@ -132,59 +132,65 @@ const Home = () => {
 
       <section className="bg-gray-200 py-12">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Card 1 */}
-            <div className="bg-white text-black rounded-lg p-6 shadow-md">
-              <div className="text-white text-6xl mb-4">
-                <FaTruck />
+          <div className="flex flex-col lg:flex-row items-center justify-between text-center lg:text-left space-y-6 lg:space-y-0">
+            {/* Point 1 */}
+            <div className="flex items-center space-x-4">
+              <FaTruck className="text-white text-4xl bg-gray-800 rounded-full p-2" />
+              <div>
+                <h3 className="text-lg font-semibold">Cash on Delivery</h3>
+                <p className="text-sm text-gray-600">
+                  Experience seamless shopping with our Cash on Delivery option.
+                </p>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Cash on Delivery</h3>
-              <p className="text-sm">
-                Experience seamless shopping with our Cash on Delivery option,
-                ensuring convenience and trust in every purchase.
-              </p>
             </div>
 
-            {/* Card 2 */}
-            <div className="bg-white text-black rounded-lg p-6 shadow-md">
-              <div className="text-white text-6xl mb-4">
-                <FaLaptop />
+            {/* Divider */}
+            <div className="hidden lg:block w-px h-16 bg-gray-400"></div>
+            <div className="lg:hidden w-full h-px bg-gray-400"></div>
+
+            {/* Point 2 */}
+            <div className="flex items-center space-x-4">
+              <FaLaptop className="text-white text-4xl bg-gray-800 rounded-full p-2" />
+              <div>
+                <h3 className="text-lg font-semibold">
+                  User-Friendly Interface
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Navigate with ease using our intuitive design.
+                </p>
               </div>
-              <h3 className="text-lg font-semibold mb-2">
-                User-Friendly Interface
-              </h3>
-              <p className="text-sm">
-                Navigate with ease! Our intuitive design makes finding and
-                purchasing your favorite products a breeze.
-              </p>
             </div>
 
-            {/* Card 3 */}
-            <div className="bg-white text-black rounded-lg p-6 shadow-md">
-              <div className="text-white text-6xl mb-4">
-                <FaCartPlus />
+            {/* Divider */}
+            <div className="hidden lg:block w-px h-16 bg-gray-400"></div>
+            <div className="lg:hidden w-full h-px bg-gray-400"></div>
+
+            {/* Point 3 */}
+            <div className="flex items-center space-x-4">
+              <FaCartPlus className="text-white text-4xl bg-gray-800 rounded-full p-2" />
+              <div>
+                <h3 className="text-lg font-semibold">Dynamic Cart System</h3>
+                <p className="text-sm text-gray-600">
+                  Real-time updates with adjustable quantities.
+                </p>
               </div>
-              <h3 className="text-lg font-semibold mb-2">
-                Dynamic Cart System
-              </h3>
-              <p className="text-sm">
-                Enjoy real-time updates on your cart, with the ability to adjust
-                quantities and see prices change instantly.
-              </p>
             </div>
 
-            {/* Card 4 */}
-            <div className="bg-white text-black rounded-lg p-6 shadow-md">
-              <div className="text-white text-6xl mb-4">
-                <FaUserAlt />
+            {/* Divider */}
+            <div className="hidden lg:block w-px h-16 bg-gray-400"></div>
+            <div className="lg:hidden w-full h-px bg-gray-400"></div>
+
+            {/* Point 4 */}
+            <div className="flex items-center space-x-4">
+              <FaUserAlt className="text-white text-4xl bg-gray-800 rounded-full p-2" />
+              <div>
+                <h3 className="text-lg font-semibold">
+                  Personalized Experience
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Your initials greet you near the shopping cart.
+                </p>
               </div>
-              <h3 className="text-lg font-semibold mb-2">
-                Personalized Experience
-              </h3>
-              <p className="text-sm">
-                Your initials greet you near the shopping cart, adding a
-                personal touch to your SherylMart journey.
-              </p>
             </div>
           </div>
         </div>
