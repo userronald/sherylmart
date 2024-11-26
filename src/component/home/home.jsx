@@ -129,20 +129,20 @@ const Home = () => {
       <section className="bg-gray-100 py-12">
         <div className="max-w-6xl mx-auto px-4">
           {/* Title */}
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
             Featuring Products
           </h2>
 
           {/* Horizontal Layout */}
-          <div className="flex flex-wrap justify-between items-center gap-4">
+          <div className="flex flex-wrap justify-between items-center gap-6">
             {/* Column 1 */}
-            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%]">
+            <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/hoodies.webp"
                 alt="Hoodies"
-                className="w-full h-48 object-cover rounded-md"
+                className="w-full h-60 object-cover rounded-md"
               />
-              <h3 className="text-lg font-semibold text-gray-800 mt-4">
+              <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Hoodies
               </h3>
               <p className="text-sm text-gray-600">
@@ -151,13 +151,13 @@ const Home = () => {
             </div>
 
             {/* Column 2 */}
-            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%]">
+            <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/shirts.webp"
                 alt="Shirts"
-                className="w-full h-48 object-cover rounded-md"
+                className="w-full h-60 object-cover rounded-md"
               />
-              <h3 className="text-lg font-semibold text-gray-800 mt-4">
+              <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Shirts
               </h3>
               <p className="text-sm text-gray-600">
@@ -166,13 +166,13 @@ const Home = () => {
             </div>
 
             {/* Column 3 */}
-            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%]">
+            <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/jeans.webp"
                 alt="Jeans"
-                className="w-full h-48 object-cover rounded-md"
+                className="w-full h-60 object-cover rounded-md"
               />
-              <h3 className="text-lg font-semibold text-gray-800 mt-4">
+              <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Jeans
               </h3>
               <p className="text-sm text-gray-600">
@@ -181,13 +181,13 @@ const Home = () => {
             </div>
 
             {/* Column 4 */}
-            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%]">
+            <div className="border border-black bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
               <img
                 src="/images/jacket.webp"
                 alt="Jackets"
-                className="w-full h-48 object-cover rounded-md"
+                className="w-full h-60 object-cover rounded-md"
               />
-              <h3 className="text-lg font-semibold text-gray-800 mt-4">
+              <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Jackets
               </h3>
               <p className="text-sm text-gray-600">
