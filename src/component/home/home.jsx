@@ -185,7 +185,7 @@ const Home = () => {
               <FaUserAlt className="text-white text-4xl bg-gray-800 rounded-full p-2" />
               <div>
                 <h3 className="text-lg font-semibold">
-                  Personalized Experience
+                  Personalized Touch
                 </h3>
                 <p className="text-sm text-gray-600">
                   Your initials greet you near the shopping cart.
