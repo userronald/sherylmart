@@ -184,9 +184,7 @@ const Home = () => {
             <div className="flex items-center space-x-4 px-4">
               <FaUserAlt className="text-white text-4xl bg-gray-800 rounded-full p-2" />
               <div>
-                <h3 className="text-lg font-semibold">
-                  Personalized Touch
-                </h3>
+                <h3 className="text-lg font-semibold">Personalized Touch</h3>
                 <p className="text-sm text-gray-600">
                   Your initials greet you near the shopping cart.
                 </p>
@@ -203,12 +201,14 @@ const Home = () => {
           </h2>
 
           <div className="flex flex-wrap justify-between items-center gap-6">
-            <div className="border border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
-              <img
-                src="/images/hoodies.webp"
-                alt="Hoodies"
-                className="w-full h-64 sm:h-72 lg:h-80 object-contain rounded-md"
-              />
+            <div className="border border-gray-800 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="w-[400px] h-[488px] mx-auto">
+                <img
+                  src="/images/hoodies.webp"
+                  alt="Hoodies"
+                  className="w-full h-full object-cover rounded-md"
+                />
+              </div>
               <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Hoodies
               </h3>
@@ -217,12 +217,14 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="border border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
-              <img
-                src="/images/shirts.webp"
-                alt="Shirts"
-                className="w-full h-64 sm:h-72 lg:h-80 object-contain rounded-md"
-              />
+            <div className="border border-gray-800 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="w-[400px] h-[488px] mx-auto">
+                <img
+                  src="/images/shirts.webp"
+                  alt="Shirts"
+                  className="w-full h-full object-cover rounded-md"
+                />
+              </div>
               <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Shirts
               </h3>
@@ -231,12 +233,14 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="border border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
-              <img
-                src="/images/jeans.webp"
-                alt="Jeans"
-                className="w-full h-64 sm:h-72 lg:h-80 object-contain rounded-md"
-              />
+            <div className="border border-gray-800 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="w-[400px] h-[488px] mx-auto">
+                <img
+                  src="/images/jeans.webp"
+                  alt="Jeans"
+                  className="w-full h-full object-cover rounded-md"
+                />
+              </div>
               <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Jeans
               </h3>
@@ -245,12 +249,14 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="border border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
-              <img
-                src="/images/jacket.webp"
-                alt="Jackets"
-                className="w-full h-64 sm:h-72 lg:h-80 object-contain rounded-md"
-              />
+            <div className="border border-gray-800 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%] transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="w-[400px] h-[488px] mx-auto">
+                <img
+                  src="/images/jacket.webp"
+                  alt="Jackets"
+                  className="w-full h-full object-cover rounded-md"
+                />
+              </div>
               <h3 className="text-xl font-semibold text-gray-800 mt-4">
                 Jackets
               </h3>
