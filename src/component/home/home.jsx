@@ -66,7 +66,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="flex flex-col md:flex-row gap-4 justify-center bg-gray-500">
           <div className="flex-1">
             <img
@@ -125,61 +125,56 @@ const Home = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-gray-100 py-12">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
-            Why Choose Us
-          </h2>
+        <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
-              <div className="text-4xl text-red-500 mb-4">
+            <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
+              <div className="text-5xl mb-4">
                 <FaTruck />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Cash on Delivery
-              </h3>
-              <p className="text-gray-600">
+              <h3 className="text-lg font-semibold mb-2">Cash on Delivery</h3>
+              <p className="text-sm">
                 Experience seamless shopping with our Cash on Delivery option,
                 ensuring convenience and trust in every purchase.
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
-              <div className="text-4xl text-red-500 mb-4">
+            <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
+              <div className="text-5xl mb-4">
                 <FaLaptop />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg font-semibold mb-2">
                 User-Friendly Interface
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm">
                 Navigate with ease! Our intuitive design makes finding and
                 purchasing your favorite products a breeze.
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
-              <div className="text-4xl text-red-500 mb-4">
+            <div className="bg-gradient-to-r from-green-400 to-green-600 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
+              <div className="text-5xl mb-4">
                 <FaCartPlus />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg font-semibold mb-2">
                 Dynamic Cart System
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm">
                 Enjoy real-time updates on your cart, with the ability to adjust
                 quantities and see prices change instantly.
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
-              <div className="text-4xl text-red-500 mb-4">
+            <div className="bg-gradient-to-r from-pink-400 to-pink-600 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
+              <div className="text-5xl mb-4">
                 <FaUserAlt />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg font-semibold mb-2">
                 Personalized Experience
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm">
                 Your initials greet you near the shopping cart, adding a
                 personal touch to your SherylMart journey.
               </p>
