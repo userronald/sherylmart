@@ -193,14 +193,14 @@ const Home = () => {
       </section>
 
       <div className="bg-[#C0C0C0]">
-        <div className="text-center py-6 px-4 mb-6 bg-gradient-to-r from-red-600 to-red-800 rounded-lg shadow-lg">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2 animate-pulse">
+        <div className="text-center py-6 px-4 mb-6 bg-white">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-red-600 mb-2">
             Limited Stock Alert - Only 20 Units Left!
           </h2>
-          <p className="text-lg md:text-xl text-gray-100">
+          <p className="text-lg md:text-xl text-gray-700">
             Secure your order today before items sell out.
           </p>
-          <p className="text-base text-gray-200 mt-2">
+          <p className="text-base text-gray-500 mt-2">
             Act fast—once these products are gone, they're gone for good!
           </p>
         </div>
