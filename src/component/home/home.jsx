@@ -204,7 +204,7 @@ const Home = () => {
             <div className="border border-gray-800 bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105">
               <div className="w-full aspect-w-5 aspect-h-6 overflow-hidden">
                 <img
-                  src="/images/hoodies.webp"
+                  src="/images/hoodies.png"
                   alt="Hoodies"
                   className="w-full h-full object-contain"
                 />
@@ -220,7 +220,7 @@ const Home = () => {
             <div className="border border-gray-800 bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105">
               <div className="w-full aspect-w-5 aspect-h-6 overflow-hidden">
                 <img
-                  src="/images/shirts.webp"
+                  src="/images/shirts.png"
                   alt="Shirts"
                   className="w-full h-full object-contain"
                 />
@@ -236,7 +236,7 @@ const Home = () => {
             <div className="border border-gray-800 bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105">
               <div className="w-full aspect-w-5 aspect-h-6 overflow-hidden">
                 <img
-                  src="/images/jeans.webp"
+                  src="/images/jeans.png"
                   alt="Jeans"
                   className="w-full h-full object-contain"
                 />
@@ -252,7 +252,7 @@ const Home = () => {
             <div className="border border-gray-800 bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105">
               <div className="w-full aspect-w-5 aspect-h-6 overflow-hidden">
                 <img
-                  src="/images/jacket.webp"
+                  src="/images/jacket.png"
                   alt="Jackets"
                   className="w-full h-full object-contain"
                 />
