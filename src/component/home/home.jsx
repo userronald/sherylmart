@@ -194,7 +194,7 @@ const Home = () => {
 
       <div className="bg-[#C0C0C0]">
         <div className="text-center py-6 px-4 mb-6 bg-white">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-red-600 mb-2">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-red-600 mb-2 animate-pulse">
             Limited Stock Alert - Only 20 Units Left!
           </h2>
           <p className="text-lg md:text-xl text-gray-700">
