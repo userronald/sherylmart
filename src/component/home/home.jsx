@@ -67,7 +67,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="overflow-x-auto scrollbar-none">
           <div className="flex gap-4 justify-start bg-gray-500 py-6">
             <div className="flex-none w-48">
@@ -128,14 +128,14 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-gray-100 py-12">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card 1 */}
-            <div className="bg-gradient-to-r from-red-500 to-red-700 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
-              <div className="text-5xl mb-4">
+            <div className="bg-white text-black rounded-lg p-6 shadow-md">
+              <div className="text-6xl mb-4">
                 <FaTruck />
               </div>
               <h3 className="text-lg font-semibold mb-2">Cash on Delivery</h3>
@@ -144,10 +144,11 @@ const Home = () => {
                 ensuring convenience and trust in every purchase.
               </p>
             </div>
+            <hr className="border-t border-gray-300 my-6" />
 
             {/* Card 2 */}
-            <div className="bg-gradient-to-r from-red-500 to-red-700 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
-              <div className="text-5xl mb-4">
+            <div className="bg-white text-black rounded-lg p-6 shadow-md">
+              <div className="text-6xl mb-4">
                 <FaLaptop />
               </div>
               <h3 className="text-lg font-semibold mb-2">
@@ -158,10 +159,11 @@ const Home = () => {
                 purchasing your favorite products a breeze.
               </p>
             </div>
+            <hr className="border-t border-gray-300 my-6" />
 
             {/* Card 3 */}
-            <div className="bg-gradient-to-r from-red-500 to-red-700 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
-              <div className="text-5xl mb-4">
+            <div className="bg-white text-black rounded-lg p-6 shadow-md">
+              <div className="text-6xl mb-4">
                 <FaCartPlus />
               </div>
               <h3 className="text-lg font-semibold mb-2">
@@ -172,10 +174,11 @@ const Home = () => {
                 quantities and see prices change instantly.
               </p>
             </div>
+            <hr className="border-t border-gray-300 my-6" />
 
             {/* Card 4 */}
-            <div className="bg-gradient-to-r from-red-500 to-red-700 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
-              <div className="text-5xl mb-4">
+            <div className="bg-white text-black rounded-lg p-6 shadow-md">
+              <div className="text-6xl mb-4">
                 <FaUserAlt />
               </div>
               <h3 className="text-lg font-semibold mb-2">
