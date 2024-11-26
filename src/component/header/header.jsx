@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
   
 
         return (
-          <header className="sticky top-0 bg-gray-500 p-4 flex justify-between items-center mb-1">
+          <header className="sticky top-0 bg-gradient-to-r from-gray-500 via-gray-600 to-gray-800 p-4 flex justify-between items-center mb-1 z-50 shadow-lg">
             <Link to="/" className="text-white text-3xl font-bold">
               SherylMart
             </Link>
@@ -54,8 +54,6 @@ import { useSelector } from "react-redux";
                   </span>
                 ) : null}
               </div>
-
-           
             </div>
           </header>
         );
