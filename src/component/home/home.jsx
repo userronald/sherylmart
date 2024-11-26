@@ -128,40 +128,71 @@ const Home = () => {
 
       <section className="bg-gray-100 py-12">
         <div className="max-w-6xl mx-auto px-4">
+          {/* Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">
             Featuring Products
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md">
+
+          {/* Horizontal Layout */}
+          <div className="flex flex-wrap justify-between items-center gap-4">
+            {/* Column 1 */}
+            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%]">
               <img
                 src="/images/hoodies.webp"
-                alt="SherylMart"
+                alt="Hoodies"
                 className="w-full h-48 object-cover rounded-md"
               />
+              <h3 className="text-lg font-semibold text-gray-800 mt-4">
+                Hoodies
+              </h3>
+              <p className="text-sm text-gray-600">
+                Cozy and stylish hoodies for every season.
+              </p>
             </div>
 
-            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md">
+            {/* Column 2 */}
+            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%]">
               <img
                 src="/images/shirts.webp"
-                alt="SherylMart"
+                alt="Shirts"
                 className="w-full h-48 object-cover rounded-md"
               />
+              <h3 className="text-lg font-semibold text-gray-800 mt-4">
+                Shirts
+              </h3>
+              <p className="text-sm text-gray-600">
+                Trend-setting shirts for all occasions.
+              </p>
             </div>
 
-            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md">
+            {/* Column 3 */}
+            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%]">
               <img
                 src="/images/jeans.webp"
-                alt="SherylMart"
+                alt="Jeans"
                 className="w-full h-48 object-cover rounded-md"
               />
+              <h3 className="text-lg font-semibold text-gray-800 mt-4">
+                Jeans
+              </h3>
+              <p className="text-sm text-gray-600">
+                Premium denim tailored for comfort.
+              </p>
             </div>
 
-            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md">
+            {/* Column 4 */}
+            <div className="border-2 border-red-500 bg-white p-4 rounded-lg shadow-md w-full sm:w-[48%] md:w-[23%]">
               <img
                 src="/images/jacket.webp"
-                alt="SherylMart"
+                alt="Jackets"
                 className="w-full h-48 object-cover rounded-md"
               />
+              <h3 className="text-lg font-semibold text-gray-800 mt-4">
+                Jackets
+              </h3>
+              <p className="text-sm text-gray-600">
+                Keep warm and stylish this season.
+              </p>
             </div>
           </div>
         </div>
