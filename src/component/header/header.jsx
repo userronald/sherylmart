@@ -1,5 +1,7 @@
 import { NavLink, Link, BrowserRouter, Routes, Route } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { logOutUser } from "../../store/reducers/users";
+import { useDispatch } from "react-redux";
 
 
 
@@ -8,6 +10,12 @@ import { useSelector } from "react-redux";
 
       const cartDetails = useSelector((state) => state.cart);
       const nameDetails = useSelector((state)=>state.users);
+
+      const dispatch = useDispatch();
+
+      const logOutFunction=()=>{
+         dispatch(logOutUser);
+      }
 
         return (
           <header className="bg-gray-500 p-4 flex justify-between items-center mb-1">
@@ -52,6 +60,11 @@ import { useSelector } from "react-redux";
                   </span>
                 ) : null}
               </div>
+
+              <button
+              onClick={logOutFunction()}>
+                logout
+              </button>
             </div>
           </header>
         );
