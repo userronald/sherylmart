@@ -130,7 +130,8 @@ const Home = () => {
       <section className="bg-gray-100 py-12">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
+            {/* Card 1 */}
+            <div className="bg-gradient-to-r from-red-500 to-red-700 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
               <div className="text-5xl mb-4">
                 <FaTruck />
               </div>
@@ -141,7 +142,8 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
+            {/* Card 2 */}
+            <div className="bg-gradient-to-r from-red-500 to-red-700 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
               <div className="text-5xl mb-4">
                 <FaLaptop />
               </div>
@@ -154,7 +156,8 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-r from-green-400 to-green-600 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
+            {/* Card 3 */}
+            <div className="bg-gradient-to-r from-red-500 to-red-700 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
               <div className="text-5xl mb-4">
                 <FaCartPlus />
               </div>
@@ -167,7 +170,8 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-r from-pink-400 to-pink-600 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
+            {/* Card 4 */}
+            <div className="bg-gradient-to-r from-red-500 to-red-700 text-white rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
               <div className="text-5xl mb-4">
                 <FaUserAlt />
               </div>
