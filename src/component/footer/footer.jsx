@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-500 text-white p-4">
+    <footer className="bg-gradient-to-r from-gray-500 via-gray-600 to-gray-800 text-white p-4">
       <div className="max-w-screen-lg mx-auto flex flex-col sm:flex-row justify-between items-center">
         <p className="text-sm sm:text-base">
           © {new Date().getFullYear()} SherylMart | Developed by Sahaya Ronaldo.
