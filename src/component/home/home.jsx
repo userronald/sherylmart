@@ -67,9 +67,7 @@ const Home = () => {
         </div>
       </section>
 
-    
-
-      <section className="bg-gray-200 py-12">
+     <section className="bg-gray-200 py-12">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between text-center lg:text-left space-y-6 lg:space-y-0">
             {/* Point 1 */}
@@ -240,15 +238,15 @@ const Home = () => {
                 </div>
 
                 <div className="flex items-center space-x-2">
-                  <button
+                  {!addedToCart.includes(item.id) ?( 
+                     <button
                     type="button"
                     className="py-2 px-4 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700"
                     onClick={() => handleAddtoCart(item)}
                   >
                     Add to Cart
-                  </button>
-                  {addedToCart.includes(item.id) && (
-                    <FiShoppingCart
+                  </button>) :(
+                   <FiShoppingCart
                       className="text-2xl text-red-600 cursor-pointer hover:text-red-700"
                       onClick={handleViewCart}
                       title="View Cart"
